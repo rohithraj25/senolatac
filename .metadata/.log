@@ -11020,3 +11020,29 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.eclipse.egit.ui 4 0 2024-07-30 17:38:47.492
 !MESSAGE Can't connect to any repository: 
+
+!ENTRY org.eclipse.egit.core 4 0 2024-07-30 17:56:31.951
+!MESSAGE An exception occurred during push on URI https://github.com/priyanka406m/User_Course_Management.git: https://github.com/priyanka406m/User_Course_Management.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/priyanka406m/User_Course_Management.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:695)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1557)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.egit.core 4 0 2024-07-30 17:57:49.421
+!MESSAGE An exception occurred during push on URI https://github.com/priyanka406m/User_Course_Management.git: https://github.com/priyanka406m/User_Course_Management.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/priyanka406m/User_Course_Management.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:695)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1557)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
