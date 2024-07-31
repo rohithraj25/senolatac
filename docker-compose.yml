@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  course-service:
+    image: course-service
+    container_name: course-service-con1
+    ports:
+      - "8001:8001"
+    
+  user-service:
+    image: user-service
+    container_name: user-service-con2
+    ports:
+      - "9090:9090"
+    
+  zuul-gateway:
+    image: zuul-gateway
+    container_name: zuul-gateway-con3
+    ports:
+      - "8765:8765"
+
+  eureka-discovery-service:
+    image: eureka
+    container_name: eureka-con4
+    ports:
+      - "8761:8761"
+
